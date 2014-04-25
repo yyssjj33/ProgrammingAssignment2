@@ -1,11 +1,10 @@
-
 # Function to create an object to hold matrix and cache its inverse
 # Note: *the supplied matrix must be invertible*
 # Usage example:
 #       #make a matrix
-#       w <- makeCacheMatrix(matrix(rnorm(5*5), nrow=5, ncol=5))
-#       cacheSolve(w) #solve for the first time
-#       cacheSolve(w) #solve again; returns from cache
+#       x <- makeCacheMatrix(matrix(1:100, nrow=10, ncol=10))
+#       cacheSolve(x) #solve for the first time
+#       cacheSolve(x) #solve again; returns from cache
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
